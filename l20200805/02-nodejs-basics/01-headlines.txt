@@ -1,0 +1,4 @@
+how the web works
+
+        browser -----request----> server : (handle request)
+                <---------------+        : (send: response)

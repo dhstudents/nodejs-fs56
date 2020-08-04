@@ -1,0 +1,18 @@
+write a server that serve these routes:
+
+
+1.   localhost:3300
+     sends the main page with links: 
+           all users  *2
+           one user   *3
+           add user   *4
+
+2.   localhost:3300/users
+     sends all users in <ul>
+2.   localhost:3300/user?id=3  : with form action="user" method="get"
+     sends the user specified in the input
+2.   localhost:3300/user       : with form action="user" method="post"
+     add the user and redirect to localhost:3000/users
+
+
+save the users in a text file users.txt

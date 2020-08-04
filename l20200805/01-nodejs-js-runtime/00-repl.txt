@@ -1,0 +1,13 @@
+|  R ead <-- +
+|  E val     |
+|  P rint    |
+V  L oop     +
+
+
+c:\>node 
+> .help
+> 2 + 2
+
+
+execute file
+c:\>node app.js
