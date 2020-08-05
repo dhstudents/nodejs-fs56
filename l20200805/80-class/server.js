@@ -1,0 +1,39 @@
+const http = require('http')
+
+// analize routes
+const webserver = http.createServer((req, res) => {
+    const { url, method } = req;
+    console.log(url, method)
+    if (url === '/') {
+        res.write('<html>')
+        res.write('<head>')
+        res.write('<title>Message</title>')
+        res.write('</head>')
+        res.write('<body><form action="/message" method="POST">')
+        res.write('<input type="text" name="message">')
+        res.write('<button type="submit">Submit</button>')
+        res.write('</from ></body > ')
+        res.write('</html>')
+        return res.end();
+    }
+
+    if (url === '/message') {
+        res.write('<h1>Thank u for the info</h1>')
+        return res.end()
+    }
+
+    res.write('<html>')
+    res.write('<head>')
+    res.write('<title>Response</title>')
+    res.write('<body><h1>Hello from server' + Date.now().toString() + '</h1></body>')
+    res.write('</head>')
+    res.write('</html>')
+    res.end();
+
+});
+
+
+webserver.listen(3000, () => console.log('Running and listening on port 3000'))
+
+
+
