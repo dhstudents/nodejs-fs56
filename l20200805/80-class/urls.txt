@@ -1,0 +1,11 @@
+localhost:3000/users       ['users]
+localhost:3000/users/1     ['users' , 1]
+
+
+
+localhost:3000
+localhost:3000/users?id=1
+
+rest
+req.url /users/1/20890
+query string
