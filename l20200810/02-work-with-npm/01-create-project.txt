@@ -1,0 +1,37 @@
+npm init
+
+nppm init -y
+
+package.json created
+
+adding script to scrips
+
+"start" : "node app.js"
+to run do: npm start
+
+more scripts:
+"dev" : "nodemon app.js"
+to run do: npm run dev
+
+
+
+errors
+syntax errors
+runtime errors
+logical errors
+
+debug
+launch.json
+{
+    "restart" : true,
+    "runtimeExecutable" : "nodemon",
+    "console" : "integratedTerminal"
+}
+https://nodejs.org/en/docs/guides/debugging-getting-started/
+https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
+
+The module wrapper
+(function(exports, require, module, __filename, __dirname) {
+// Module code actually lives in here
+});
