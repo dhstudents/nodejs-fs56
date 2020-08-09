@@ -9,9 +9,9 @@ const server = http.createServer(
             const indexHtml = fs.readFileSync(__dirname + "/index.html")
             return res.end(indexHtml)
         }
-   
+        
    // redirect
-   
+        
         if (url === "/message" && method === "POST") {
             const body = [];
 

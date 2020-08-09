@@ -1,0 +1,19 @@
+create application with the following API:
+
+/register
+accept 
+form with action='/register' method='post'
+username , password 
+save it on the server to a file
+send confirm message if success
+
+
+/login 
+accept 
+form with action='/login' method='post'
+username , password 
+read the relevant file and compare its content with post date
+if true
+    send message welcome ${username} 
+else
+    send message no permosion

@@ -1,6 +1,6 @@
 npm init
 
-nppm init -y
+npm init -y
 
 package.json created
 
@@ -12,8 +12,6 @@ to run do: npm start
 more scripts:
 "dev" : "nodemon app.js"
 to run do: npm run dev
-
-
 
 errors
 syntax errors

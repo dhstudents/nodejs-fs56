@@ -1,0 +1,10 @@
+npm init
+answer all propmpts
+end with y
+
+npm init -y to skip the prompts
+creates packege.json
+
+
+npm install express  (local installation)
+creates node_module

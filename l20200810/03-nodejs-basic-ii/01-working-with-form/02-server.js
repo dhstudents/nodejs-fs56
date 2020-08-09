@@ -10,7 +10,6 @@ const server = http.createServer(
             return res.end(indexHtml)
         }
  
- 
         res.setHeader('content-type'  ,'application/json')
         res.end(JSON.stringify({
             url,
