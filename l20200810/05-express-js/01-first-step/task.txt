@@ -1,2 +1,5 @@
 create express server with the os info 
 
+
+implement calc with express and modules
+
