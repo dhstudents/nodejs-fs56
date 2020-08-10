@@ -18,13 +18,11 @@ const requestHandler = (req, res) => {
         return;
     }
 
-
     if (url === '/api/time') {
         const time = new Date();
         res.end(`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
         return;
     }
-
 
     if (url === '/api/isodate') {
         const date = new Date();
@@ -43,5 +41,3 @@ const requestHandler = (req, res) => {
 }
 // I - pass the function address    
 module.exports = requestHandler;
-
-

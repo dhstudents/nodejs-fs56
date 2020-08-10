@@ -1,5 +1,7 @@
-const fs = require('fs');
+// ES2015
+//import fs from 'fs'
+// CommonJS
+const fs = require('fs'); // core module
+console.log(fs)
 
-//console.log(fs)
-
-fs.writeFileSync('data.txt' , 'My name is jack')
+//fs.writeFileSync('data.txt' , 'My name is jack')

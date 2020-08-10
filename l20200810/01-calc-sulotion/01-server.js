@@ -23,9 +23,7 @@ class Calculator {
 }
 
 const server = http.createServer( requestHandler )
-
 server.listen(3000, () => console.log('run on port 3000'))
-
 
 function requestHandler(req, res) {
 
@@ -34,7 +32,8 @@ function requestHandler(req, res) {
     // send the index.html
     if (reqUrl === '/') {
         const html = fs.readFileSync(__dirname + '/index.html' )
-        return res.end(html)
+        res.end(html)
+        return;
     }
 
     if (reqUrl.includes('?')) {

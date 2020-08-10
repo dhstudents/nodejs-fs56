@@ -1,10 +1,5 @@
 const http = require('http')
 
-
-function handleRequest(req, res) {
-    console.log(req)
-}
-
 // analize routes
 const webserver = http.createServer((req, res) => {
     const { url, method } = req;
@@ -13,11 +8,11 @@ const webserver = http.createServer((req, res) => {
         res.write('<html>')
         res.write('<head>')
         res.write('<title>Message</title>')
+        res.write('</head>')
         res.write('<body><form action="/message" method="POST">')
         res.write('<input type="text" name="message">')
-        res.write('<button type="sumit">Submit</button>')
+        res.write('<button type="submit">Submit</button>')
         res.write('</from ></body > ')
-        res.write('</head>')
         res.write('</html>')
         return res.end();
     }

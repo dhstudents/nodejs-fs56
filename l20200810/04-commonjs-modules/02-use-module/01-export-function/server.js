@@ -1,6 +1,6 @@
-const http = require('http')
+const http = require('http')  // core module
 // here we get the function address
-const requestHandler = require('./routes') 
+const requestHandler = require('./routes') // return  module.exports
 
 const server = http.createServer(requestHandler)
 

@@ -1,0 +1,14 @@
+{
+  "name": "01-work-with-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev-shimi": "nodemon index.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

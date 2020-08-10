@@ -29,9 +29,6 @@ app.get('/api/gmtdate', (req, res) => {
 
 
 
-
-
-
 app.listen(3000, () => {
     console.log("EXPRESS SERVER WITH ROUTES\n running on port 3000")
 })

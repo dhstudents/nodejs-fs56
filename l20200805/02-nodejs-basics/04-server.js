@@ -12,8 +12,8 @@ const webserver = http.createServer((req, res) => {
     res.write('<html>')
     res.write('<head>')
     res.write('<title>Response</title>')
-    res.write('<body><h1>Hello from server</h1></body>')
     res.write('</head>')
+    res.write('<body><h1>Hello from server</h1></body>')
     res.write('</html>')
     res.end();
     // res.write() // ERROR !!!!

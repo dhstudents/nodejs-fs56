@@ -1,5 +1,6 @@
 write the os info application with module
 
 
+
 home 
 in calc application extract the calculation to a module

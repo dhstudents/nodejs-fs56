@@ -23,7 +23,7 @@ const webserver = http.createServer((req, res) => {
 webserver.listen(3000, () => console.log('Running and listening on port 3000'))
 
 
-// call it from broswer http://localhost:3000
+// call it from browser http://localhost:3000
 // watch the terminal output
 
 // CTRL + C will stop the application in the terminal

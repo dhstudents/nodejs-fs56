@@ -1,8 +1,7 @@
 npm init
-
 npm init -y
-
 package.json created
+
 
 adding script to scrips
 

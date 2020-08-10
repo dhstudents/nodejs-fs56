@@ -6,8 +6,9 @@ const server = http.createServer(
         const { url, method } = req;
 
         if (url === '/') {
-
-            fs.readFile('abc.txt', (err, data) => {
+            // const text = fs.readFileSync('abc.txt', 'utf-8')
+            // console.log(text)
+            fs.readFile('00-abc.txt', (err, data) => {
                 if (err) {
                     res.end(`<h1>${err.code} : ${err.message}</h1>`)
                     return

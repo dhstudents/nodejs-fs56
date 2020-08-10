@@ -1,9 +1,13 @@
 create application with the following API:
+/
+a href="/register">rgister</a>
+a href="/login">login</a>
+
 
 /register
 accept 
 form with action='/register' method='post'
-username , password 
+username , password  , submit     
 save it on the server to a file
 send confirm message if success
 

@@ -1,25 +1,27 @@
 const http = require('http')
-const qs = require('querystring')
-
-
+const url = require('url')
 // console.log(qs)
 // process.exit()
-
-
 const webserver = http.createServer((req, res) => {
-    const { url, method } = req;
+    const { url : req_url, method } = req;
 
-    if (url.includes('/?')) {
+    if (req_url.includes('/?')) {
         //  http://localhost:3000/?action=add&n1=20&n2=20
-        const qsObject = qs.parse(url.substr(2))
-        console.log(qsObject);
+        //  http://localhost:3000/?action=sub&n1=20&n2=20
+        //  http://localhost:3000/?action=mul&n1=20&n2=20
+        //  http://localhost:3000/?action=div&n1=20&n2=20
+        const qObject = url.parse(req_url, true).query
+        console.log(qObject);
     } else {
-        // http://localhost:3000/calc/add/20/20
-        const qsItems = url.substring(1).split('/');
-        console.log(qsItems)
+        // http://localhost:3000/add/20/20
+        // http://localhost:3000/sub/20/20
+        // http://localhost:3000/mul/20/20
+        // http://localhost:3000/div/20/20
+        const qItems = req_url.substring(1).split('/');
+        console.log(qItems)
     }
 
-    res.end();
+    res.end("<h1>End!!!!</h1>");
 });
 
 
